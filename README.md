@@ -87,19 +87,23 @@ try {
 
 ## Example Response
 ```json
+
 {
-  "data": {
-    "type": "api_job_result",
-    "id": "job-id-here",
-    "attributes": {
-      "status": "success",
-      "type": "content_processing",
-      "result": {
-        "content": "Processed result content here..."
-      }
+    "data": {
+        "type": "api_job_result",
+        "id": "f7d3eec2-7ba6-4104-9f30-ff418428de2c",
+        "attributes": {
+            "status": "success",
+            "type": "content_detect_spam",
+            "result": {
+                "pass": false,
+                "score": 85,
+                "reason": "The message appears to be a solicitation for financial services, which is a common characteristic of spam."
+            }
+        }
     }
-  }
 }
+
 ```
 ---
 
